@@ -1,0 +1,25 @@
+body {
+  font-family: $main-font;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+}
+img {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}

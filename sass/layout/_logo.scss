@@ -1,0 +1,26 @@
+.logo {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: $logo-color;
+
+  margin-right: 93px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 88px;
+    font-size: 24px;
+    line-height: 1.167;
+  }
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: $title-dark-theme-color;
+}

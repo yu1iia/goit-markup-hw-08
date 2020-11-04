@@ -1,0 +1,113 @@
+.hero {
+  padding-bottom: 118px;
+  padding-top: 118px;
+
+  margin: 0 auto;
+  background-color: $dark-bg-color;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/bgimage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 118px;
+  padding-top: 118px;
+  &-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.615;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $title-dark-theme-color;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bgimage-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 480px;
+
+    &-title {
+      font-size: 26px;
+      line-height: 1.615;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    width: 768px;
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bgimage-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-title {
+      font-size: 26px;
+      line-height: 1.615;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+    padding-top: 200px;
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bgimage-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-title {
+      font-size: 44px;
+      line-height: 1.364;
+    }
+  }
+}
+
+.order-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $title-dark-theme-color;
+  background: $accent-color;
+  border: none;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}

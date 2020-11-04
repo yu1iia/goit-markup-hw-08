@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--<link rel="stylesheet" href="./css/main.min.css" />-->
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+    <title>Портфолио</title>
+  </head>
+  <body>
+    <!--Header-->
+
+    <header class="header">
+      <div class="container portfolio-header">
+        <nav class="header-navigation">
+          <a class="logo link" href="./index.html"
+            ><span class="accent">Web</span>Studio</a
+          >
+          <ul class="navigation list">
+            <li class="navigation-item">
+              <a class="navigation-link link" href="./index.html">Студия</a>
+            </li>
+            <li class="navigation-item">
+              <a
+                class="navigation-link active-page link"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header-contacts">
+          <a class="link contacts-details" href="mailto:info@devstudio.com">
+            <svg class="email contacts-icon">
+              <use
+                class="contacts-details-svg"
+                href="./images/sprite.svg#envelope"
+              ></use>
+            </svg>
+            info@devstudio.com</a
+          >
+          <a class="link contacts-details" href="tel:+380961111111">
+            <svg class="smartphone contacts-icon">
+              <use
+                class="contacts-details-svg"
+                href="./images/sprite.svg#smartphone"
+              ></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </address>
+      </div>
+      <!--Кнопка мобильного меню-->
+      <button type="button" class="menu-button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+        <svg class="icon-svg" width="24" height="24" aria-label="Переключатель мобильного меню">
+          <use class="close-icon" href="./images/sprite.svg#close-menu" width="24" height="24"></use>
+          <use class="burger-icon" href="./images/sprite.svg#burger-menu" width="24" height="16"></use>
+        </svg>
+      </button>
+    </header>
+<!--Мобильное меню-->
+<div class="mobile-menu" id="mobile-menu" data-menu>
+  <nav class="mobile-navigation">
+    <ul class="mobile-navigation__navigation-list">
+      <li class="mobile-menu__navigation-item">
+        <a class="mobile-menu__navigation-link link" href="./index.html">Студия</a>
+      </li>
+      <li class="mobile-menu__navigation-item">
+        <a class="mobile-menu__navigation-link active-page link" href="./portfolio.html">Портфолио</a>
+      </li>
+      <li class="mobile-menu__navigation-item">
+        <a class="mobile-menu__navigation-link link" href="">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="mobile-contacts">
+    <address class="mobile-contacts__header-contacts address">
+      <a class="mobile-contacts__contacts-details link" href="mailto:info@devstudio.com">
+        <svg class="email contacts-icon">
+          <use href="./images/sprite.svg#envelope"></use>
+        </svg>
+        info@devstudio.com</a>
+      <a class="mobile-contacts__contacts-details link" href="tel:+380961111111">
+        <svg class="smartphone contacts-icon">
+          <use href="./images/sprite.svg#smartphone"></use>
+        </svg>
+        +38 096 111 11 11</a>
+    </address>
+  </div>
+</div>
+
+    <main>
+      <section class="portfolio">
+        <div class="container">
+          <!--Фильтр по услугам студии-->
+          <h1 hidden>Фильтр по услугам студии</h1>
+          <ul class="filter-list list">
+            <li class="filter-item">
+              <button class="services-filter-button" type="button">Все</button>
+            </li>
+            <li class="filter-item">
+              <button class="services-filter-button" type="button">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="filter-item">
+              <button class="services-filter-button" type="button">
+                Приложения
+              </button>
+            </li>
+            <li class="filter-item">
+              <button class="services-filter-button" type="button">
+                Дизайн
+              </button>
+            </li>
+            <li class="filter-item">
+              <button class="services-filter-button" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+
+          <!--Услуги-->
+
+          <ul class="services-list list">
+            <li class="services-item">
+              <a class="services-link link" href="">
+                <div class="services-preview">
+                  <picture>
+                    <source srcset="./images/portfolio/website-desktop.jpg 1x, ./images/portfolio/website-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/portfolio/website-tablet.jpg 1x, ./images/portfolio/website-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/website-mobile.jpg 1x, ./images/portfolio/website-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                      <img
+                        src="./images/portfolio/website-mobile.jpg"
+                        alt="страница вебсайта">
+                        </picture>
+                </div>
+                <div class="services-content">
+                  <h2 class="services-title">Технокряк</h2>
+                  <p class="services-category">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="services-item">
+              <a class="services-link link" href="">
+                <div class="services-preview">
+                  <picture>
+                    <source srcset="./images/portfolio/poster-desktop.jpg 1x, ./images/portfolio/poster-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/portfolio/poster-tablet.jpg 1x, ./images/portfolio/poster-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/poster-mobile.jpg 1x, ./images/portfolio/poster-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                      <img
+                        src="./images/portfolio/poster-mobile.jpg"
+                        alt="постер баскетбол">
+                    </picture>
+                </div>
+                <div class="services-content">
+                  <h2 class="services-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="services-category">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="services-item">
+              <a class="services-link link" href="">
+                <div class="services-preview">
+                  <picture>
+                    <source srcset="./images/portfolio/restaurant-desktop.jpg 1x, ./images/portfolio/restaurant-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/portfolio/restaurant-tablet.jpg 1x, ./images/portfolio/restaurant-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/restaurant-mobile.jpg 1x, ./images/portfolio/restaurant-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                      <img
+                        src="./images/portfolio/restaurant-mobile.jpg"
+                        alt="логотип ресторана морепродуктов">
+                  </picture>
+                </div>
+                <div class="services-content">
+                  <h2 class="services-title">Ресторан Seafood</h2>
+                  <p class="services-category">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="services-item">
+              <a class="services-link link" href="">
+                <div class="services-preview">
+                  <picture>
+                    <source srcset="./images/portfolio/marketing-desktop.jpg 1x, ./images/portfolio/marketing-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/portfolio/marketing-tablet.jpg 1x, ./images/portfolio/marketing-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/marketing-mobile.jpg 1x, ./images/portfolio/marketing-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                      <img
+                        src="./images/portfolio/marketing-mobile.jpg"
+                        alt="наушники">
+                  </picture>
+                </div>
+                <div class="services-content">
+                  <h2 class="services-title">Проект Prime</h2>
+                  <p class="services-category">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="services-item">
+              <a class="services-link link" href="">
+                <div class="services-preview">
+                  <picture>
+                    <source srcset="./images/portfolio/boxes-desktop.jpg 1x, ./images/portfolio/boxes-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/portfolio/boxes-tablet.jpg 1x, ./images/portfolio/boxes-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/boxes-mobile.jpg 1x, ./images/portfolio/boxes-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                      <img
+                        src="./images/portfolio/boxes-mobile.jpg"
+                        alt="коробки">
+                  </picture>
+                </div>
+                <div class="services-content">
+                  <h2 class="services-title">Проект Boxes</h2>
+                  <p class="services-category">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="services-item">
+              <a class="services-link link" href="">
+                <div class="services-preview">
+                  <picture>
+                    <source srcset="./images/portfolio/inspiration-desktop.jpg 1x, ./images/portfolio/inspiration-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/portfolio/inspiration-tablet.jpg 1x, ./images/portfolio/inspiration-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/inspiration-mobile.jpg 1x, ./images/portfolio/inspiration-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                      <img
+                        src="./images/portfolio/inspiration-mobile.jpg"
+                        alt="веб-сайт">
+                  </picture>
+                </div>
+                <div class="services-content">
+                  <h2 class="services-title">Inspiration has no Borders</h2>
+                  <p class="services-category">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="services-item">
+              <a class="services-link link" href="">
+                <div class="services-preview">
+                  <picture>
+                    <source srcset="./images/portfolio/edition-desktop.jpg 1x, ./images/portfolio/edition-desktop@2x.jpg 2x"
+                      media="(min-width: 1200px)">
+                    <source srcset="./images/portfolio/edition-tablet.jpg 1x, ./images/portfolio/edition-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/edition-mobile.jpg 1x, ./images/portfolio/edition-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                      <img
+                        src="./images/portfolio/edition-mobile.jpg"
+                        alt="книга">
+                  </picture>
+                </div>
+                <div class="services-content">
+                  <h2 class="services-title">Издание Limited Edition</h2>
+                  <p class="services-category">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="services-item">
+              <a class="services-link link" href="">
+                <div class="services-preview">
+                  <picture>
+                    <source srcset="./images/portfolio/label-desktop.jpg 1x, ./images/portfolio/label-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/portfolio/label-tablet.jpg 1x, ./images/portfolio/label-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/label-mobile.jpg 1x, ./images/portfolio/label-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                      <img
+                        src="./images/portfolio/label-mobile.jpg"
+                        alt="бирка с логотипом">
+                  </picture>
+                </div>
+                <div class="services-content">
+                  <h2 class="services-title">Проект LAB</h2>
+                  <p class="services-category">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="services-item">
+              <a class="services-link link" href="">
+                <div class="services-preview">
+                  <picture>
+                    <source srcset="./images/portfolio/business-desktop.jpg 1x, ./images/portfolio/business-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/portfolio/business-tablet.jpg 1x, ./images/portfolio/business-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/business-mobile.jpg 1x, ./images/portfolio/business-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                      <img
+                        src="./images/portfolio/business-mobile.jpg"
+                        alt="веб приложение для бизнеса">
+                  </picture>
+                </div>
+                <div class="services-content">
+                  <h2 class="services-title">Growing Business</h2>
+                  <p class="services-category">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-contacts-wrapper">
+          <div class="footer-contacts">
+          <a class="footer-logo link" href="./index.html"
+            ><span class="accent">Web</span>Studio</a
+          >
+          <address class="contacts address">
+            <ul class="footer-contacts-list list">
+              <li class="footer-contacts-item">
+                <a
+                  class="footer-contacts-details map-address link"
+                  href="https://goo.gl/maps/kugexmw8L3Ajr5Bk6"
+                  target="_blank"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-contacts-item">
+                <a
+                  class="footer-contacts-details footer-email link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-contacts-item">
+                <a
+                  class="footer-contacts-details footer-tel link"
+                  href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join">
+          <b class="join-title"> Присоединяйтесь </b>
+          <ul class="footer-social-list list">
+            <li class="footer-social-icons">
+              <a class="footer-social-link" href="">
+                <svg class="footer-social-svg">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-icons">
+              <a class="footer-social-link" href="">
+                <svg class="footer-social-svg">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-icons">
+              <a class="footer-social-link" href="">
+                <svg class="footer-social-svg">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-icons">
+              <a class="footer-social-link" href="">
+                <svg class="footer-social-svg">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        </div>
+        <!--Subscribe form-->
+        <form class="subscribe-form-wrapper">
+          <b class="join-title">Подпишитесь на рассылку</b>
+          <div class="subscribe-form">
+            <input
+              type="email"
+              name="user-email"
+              class="subscribe-form-input"
+              placeholder="E-mail"
+              required/>
+          <button type="submit" class="subscribe-form-btn">
+            <span class="send-button-wrapper"
+              >Подписаться
+              <svg class="send-icon" width="24px" height="24px">
+                <use href="/images/sprite.svg#send"></use>
+              </svg>
+            </span>
+          </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

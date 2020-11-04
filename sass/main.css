@@ -1,0 +1,14 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --dark-bg-color: #2f303a;
+  --logo-color: #000000;
+  --main-font-color: #757575;
+  --accent-color: #2196f3;
+  --title-light-theme-color: #212121;
+  --title-dark-theme-color: #ffffff;
+  --light-bg-color: #f5f4fa;
+  --subtitle-dark-theme-color: rgba(255, 255, 255, 0.6);
+  --icon-color: #afb1b8;
+}
+/*# sourceMappingURL=main.css.map */
