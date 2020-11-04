@@ -156,11 +156,6 @@ img {
   }
 }
 
-.services-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 @media screen and (max-width: 480px) {
   .services-list {
     width: 100%;
@@ -171,6 +166,13 @@ img {
   .services-list {
     display: block;
     width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -598,8 +600,8 @@ img {
   display: none;
   position: absolute;
   top: 60px;
-  width: 480px;
   height: 393px;
+  width: 100vw;
   z-index: 999;
   opacity: 0;
   visibility: hidden;
@@ -666,6 +668,8 @@ img {
 
 .mobile-menu.is-open {
   display: block;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .mobile-navigation {
