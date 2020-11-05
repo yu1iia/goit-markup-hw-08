@@ -530,7 +530,7 @@ img {
   position: absolute;
   top: 60px;
   height: 393px;
-  width: 100vw;
+  width: 100%;
   z-index: 999;
   opacity: 0;
   visibility: hidden;
@@ -597,7 +597,6 @@ img {
 
 .mobile-menu.is-open {
   display: block;
-  margin: 0 auto;
   width: 100%;
 }
 
@@ -903,6 +902,30 @@ a.navigation-link.link {
   padding-top: 118px;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bgimage-mobile@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bgimage-mobile.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bgimage-tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bgimage-desktop@2x.jpg");
+  }
+}
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -915,18 +938,12 @@ a.navigation-link.link {
   color: #ffffff;
 }
 
-@media screen and (max-width: 480px) {
-  .hero {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bgimage-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 480px;
+    width: 100%;
   }
   .hero-title {
     font-size: 26px;
@@ -936,10 +953,10 @@ a.navigation-link.link {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bgimage-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
   }
   .hero-title {
     font-size: 26px;
@@ -1203,9 +1220,23 @@ a.navigation-link.link {
   background-color: #f5f4fa;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 480px) {
   .team {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team {
+    width: 100%;
+    padding-bottom: 60px;
     padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team {
+    width: 100%;
     padding-bottom: 60px;
   }
 }
@@ -1300,32 +1331,6 @@ a.navigation-link.link {
   border-radius: 0 0 4px 4px;
   background-color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-@media screen and (max-width: 480px) {
-  .team {
-    display: block;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .team {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .team {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team {
-    width: 100%;
-    margin: 0 auto;
-  }
 }
 
 .teammate-name {
@@ -1497,7 +1502,7 @@ a.navigation-link.link {
 
 @media screen and (max-width: 767px) {
   .footer {
-    width: 480px;
+    width: 100%;
     padding-bottom: 60px;
     padding-top: 60px;
   }
@@ -1505,7 +1510,7 @@ a.navigation-link.link {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
-    width: 768px;
+    width: 100%;
     padding-bottom: 60px;
     padding-top: 60px;
   }
@@ -1514,6 +1519,13 @@ a.navigation-link.link {
 .footer-container {
   display: inline-block;
   text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-container {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {

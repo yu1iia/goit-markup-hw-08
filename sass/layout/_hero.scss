@@ -13,6 +13,43 @@
   background-size: cover;
   padding-bottom: 118px;
   padding-top: 118px;
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bgimage-mobile@2x.jpg");
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bgimage-mobile.jpg");
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bgimage-tablet@2x.jpg");
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bgimage-desktop@2x.jpg");
+  }
+
   &-title {
     margin-top: 0;
     margin-bottom: 30px;
@@ -26,12 +63,6 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .hero {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .hero {
     background-image: linear-gradient(
@@ -41,8 +72,7 @@
       url("../images/bgimage-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
-    width: 480px;
+    width: 100%;
 
     &-title {
       font-size: 26px;
@@ -52,8 +82,6 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    width: 768px;
-
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -61,7 +89,7 @@
       url("../images/bgimage-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
+    width: 100%;
     &-title {
       font-size: 26px;
       line-height: 1.615;
