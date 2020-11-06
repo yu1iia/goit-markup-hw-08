@@ -61,6 +61,13 @@
     text-transform: uppercase;
     color: $title-dark-theme-color;
   }
+
+  @media screen and (max-width: 480px) {
+    &-container {
+      display: block;
+      width: 100vw;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {

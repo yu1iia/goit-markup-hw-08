@@ -346,7 +346,6 @@ img {
 
 .subscribe-form-input {
   display: inline-block;
-  width: 358px;
   height: 50px;
   margin-right: 12px;
   padding-left: 16px;
@@ -357,14 +356,23 @@ img {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 480px) {
+  .subscribe-form-input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .subscribe-form-input {
     display: block;
     margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .subscribe-form-input {
     width: 450px;
     margin-bottom: 20px;
@@ -374,6 +382,7 @@ img {
 @media screen and (min-width: 1200px) {
   .subscribe-form-input {
     margin-right: 12px;
+    width: 358px;
   }
 }
 
@@ -445,7 +454,6 @@ img {
   color: #2196f3;
 }
 
-.team,
 .work,
 .portfolio,
 .clients {
@@ -458,30 +466,8 @@ img {
 }
 
 .team {
-  padding-top: 94px;
   margin: 0 auto;
   background-color: #f5f4fa;
-}
-
-@media screen and (max-width: 480px) {
-  .team {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .team {
-    width: 100%;
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team {
-    width: 100%;
-    padding-bottom: 60px;
-  }
 }
 
 .team-title {
@@ -574,6 +560,19 @@ img {
   border-radius: 0 0 4px 4px;
   background-color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.team-container {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: #f5f4fa;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-container {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .teammate-name {
@@ -928,8 +927,6 @@ a.navigation-link.link {
 
 .footer {
   margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
   background: #2f303a;
 }
 
@@ -942,20 +939,19 @@ a.navigation-link.link {
 @media screen and (max-width: 767px) {
   .footer {
     width: 100%;
-    padding-bottom: 60px;
-    padding-top: 60px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
     width: 100%;
-    padding-bottom: 60px;
-    padding-top: 60px;
   }
 }
 
 .footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #2f303a;
   display: inline-block;
   text-align: center;
 }
