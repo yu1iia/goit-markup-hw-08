@@ -40,6 +40,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .container {
+    position: relative;
     width: 480px;
   }
 }
@@ -705,7 +706,12 @@ a.mobile-menu__navigation-link.active-page {
 
 @media screen and (max-width: 767px) {
   .header {
-    width: 480px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
   }
 }
 
@@ -944,6 +950,7 @@ a.navigation-link.link {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    margin-top: 60px;
   }
   .hero-title {
     font-size: 26px;
