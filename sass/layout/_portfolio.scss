@@ -1,7 +1,11 @@
 .portfolio {
   margin: 0 auto;
   border-top: 1px solid #ececec;
-  @media screen and (max-width: 767px) {
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 480px;
     padding-bottom: 60px;
     padding-top: 60px;
@@ -10,6 +14,9 @@
     width: 768px;
     padding-bottom: 60px;
     padding-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 .services-filter-button {
