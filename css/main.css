@@ -630,6 +630,10 @@ img {
   display: block;
 }
 
+.mobile-contacts .link:hover {
+  color: #2196f3;
+}
+
 .mobile-contacts__contacts-details {
   text-align: center;
 }
@@ -671,6 +675,10 @@ a.mobile-menu__navigation-link.active-page {
 
 .menu-button .icon-svg:hover {
   fill: #2196f3;
+}
+
+.contacts-icon {
+  fill: currentColor;
 }
 
 .logo {
@@ -903,6 +911,10 @@ a.navigation-link.link {
   .navigation.list {
     display: none;
   }
+}
+
+.contacts-icon {
+  fill: currentColor;
 }
 
 .hero {

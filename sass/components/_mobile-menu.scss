@@ -84,6 +84,9 @@
     letter-spacing: 0.02em;
     color: $main-font-color;
     display: block;
+    &:hover {
+      color: $accent-color;
+    }
   }
   &__contacts-details {
     text-align: center;
@@ -121,4 +124,7 @@ a.mobile-menu__navigation-link.active-page {
       fill: $accent-color;
     }
   }
+}
+.contacts-icon {
+  fill: currentColor;
 }
