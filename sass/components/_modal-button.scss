@@ -10,7 +10,7 @@
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (max-width: 480px) {
-    padding: 94px 50px;
+    padding-top: 94px 15px;
   }
 }
 .is-hidden {
@@ -19,26 +19,42 @@
   pointer-events: none;
 }
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  padding-bottom: 40px;
+  position: relative;
   padding-top: 40px;
-
-  width: 450px;
-  height: 609px;
+  padding-bottom: 40px;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
+    height: 609px;
+    margin-top: 93px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 208px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
+    margin-top: 220px;
   }
 
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
+  }
 
   &-title {
     padding-bottom: 12px;
@@ -54,6 +70,11 @@
       line-height: 1.5;
       display: inline-block;
       padding: 0 40px 10px;
+    }
+  }
+  &-form {
+    @media screen and (max-width: 480px) {
+      width: 100%;
     }
   }
   &-form-field {
