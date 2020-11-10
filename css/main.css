@@ -71,7 +71,7 @@ img {
 
 @media screen and (max-width: 480px) {
   .backdrop {
-    padding-top: 94px 15px;
+    padding: 94px 15px;
   }
 }
 
@@ -96,7 +96,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -1614,6 +1614,10 @@ a.navigation-link.link {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts-details:hover, .footer-contacts-details:focus {
+  color: #2196f3;
 }
 
 .footer-contacts-details.map-address {

@@ -58,6 +58,10 @@
     letter-spacing: 0.03em;
     color: $subtitle-dark-theme-color;
 
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
     &.map-address {
       color: $title-dark-theme-color;
     }

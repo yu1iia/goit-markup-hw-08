@@ -1036,6 +1036,10 @@ a.navigation-link.link {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-contacts-details:hover, .footer-contacts-details:focus {
+  color: #2196f3;
+}
+
 .footer-contacts-details.map-address {
   color: #ffffff;
 }
